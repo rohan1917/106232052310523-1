@@ -461,3 +461,56 @@
 .footer__link:hover{
     color: black;
 }
+
+
+.social__links_container button{
+    /* color: white; */
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.social__links_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclamer{
+    width: 95%;
+    margin: auto;
+    color: gray;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+
+/* 450-900px -> 3fr for a row */
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 300-450px -> 2fr for a row */
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 0-300px -> 1fr for a row */
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
